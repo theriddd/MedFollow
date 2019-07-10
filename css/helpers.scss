@@ -1,0 +1,122 @@
+// Vars
+$colorBackgroundAdmin: #F9F9F9;
+$colorGray: #554a4c;
+$colorMediumGray: #50555b;
+$colorLightGray: #a4aab6;
+$colorRed: #FF4355;
+$colorBlue: #03B7E5;
+$colorYellow: #FBAA21;
+$colorWhite: #FFFFFF;
+$colorTurquoise: #35DEF4;
+$colorLightBlue: #29B7E5;
+
+// Margins
+$marginStandard: 35px;
+
+// Forms
+$borderColorInFields: #deefff;
+$backgroundColorInFields: #f5faff;
+$placeholderColor: #c3c3c3;
+
+.input-group-text {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0.375rem 0.75rem;
+  margin-bottom: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 0;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 0;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control-lg {
+  height: calc(1.5em + 1rem + 2px);
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  border-radius: 0;
+}
+
+/* Border Radius */
+
+.btlr{
+  border-top-left-radius: 5px !important;
+}
+.btrr{
+  border-top-right-radius: 5px !important;;
+}
+
+.bblr{
+  border-bottom-left-radius: 5px !important;;
+}
+
+.bbrr{
+  border-bottom-right-radius: 5px !important;;
+}
+
+/* Modal */
+
+.modal{
+  .modal-dialog{
+    .modal-content{
+      .modal-header{
+        border-bottom: unset;
+        .material-icons{
+          margin: 0 auto;
+          font-size: 4rem;
+          color: #29b7e6;
+        }
+      }
+      .modal-body{
+        .title{
+          text-align: center;
+          color: $colorGray;
+        }
+        .text{
+          text-align: center;
+          color: $colorMediumGray;
+        }
+      }
+      .modal-footer{
+        border-top: unset;
+        a.dismiss{
+          color: #fff;
+          background-color: #29B7E5;
+          text-decoration: none;
+          width: 50%;
+          text-align: center;
+          padding: 1rem;
+          border-radius: 5px;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+
+.margin-top-admin{
+  margin-top: 120px;
+}

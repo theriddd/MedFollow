@@ -1,0 +1,248 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>MedFollow</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.css" media="screen,projection"/>
+    <link rel="stylesheet" href="css/styles.css?v=1.0">
+    <link rel="stylesheet" href="css/helpers.css?v=1.0">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+<div class="loader">
+    <div class="row h-100">
+        <div class="col-sm-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3 my-auto">
+            <img src="img/icon.png" class="mx-auto d-block">
+        </div>
+    </div>
+</div>
+
+<!-- Header -->
+<header class="header-session">
+    <div class="row">
+        <div class="col-5 col-sm-9 position-relative">
+            <div class="logo-header">
+                <img src="img/icon.png" class="img-fluid mt-4">
+            </div>
+        </div>
+
+        <div class="col-7 col-sm-3 position-relative">
+            <div class="access-header">
+                <i class="material-icons mt-4 mr-2">
+                    notifications
+                </i>
+                <div class="profile-img mr-2" style="background-image: url(./img/profile.jpg)"></div>
+                <i class="material-icons menu-button">
+                    dehaze
+                </i>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- /Header -->
+
+
+<!-- Side menu -->
+<div class="side-menu">
+    <div class="header">
+        <div class="close">
+            <i class="material-icons">
+                close
+            </i>
+        </div>
+
+        <div class="profile-img" style="background-image: url(./img/profile.jpg)"></div>
+        <div class="info">
+            <strong>Miguel Martinez</strong>
+            mmartinez@gmail.com
+        </div>
+    </div>
+    <div class="content">
+        Dependientes
+        <div class="item">
+            <div class="mdl-card__supporting-text">
+                <i class="material-icons">supervised_user_circle</i>
+                Luís Martinez
+            </div>
+        </div>
+        <div class="item">
+            <div class="mdl-card__supporting-text">
+                <i class="material-icons">supervised_user_circle</i>
+                Jose Martinez
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        Pacientes vinculados
+        <div class="item">
+            <div class="mdl-card__supporting-text">
+                <i class="material-icons">supervised_user_circle</i>
+                María Soto
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="item">
+            <div class="mdl-card__supporting-text">
+                <i class="material-icons">exit_to_app</i>
+                <a href="index.html">Cerrar</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Side menu -->
+
+<div class="admin-content">
+    <div class="row h-100">
+        <div class="col-sm-12 col-md-10 offset-md-1 margin-top-admin">
+            <strong class="mb-2">
+                <a href="javascript:history.back();" class="back">
+                    <i class="material-icons">arrow_back</i><br>
+                </a>
+                Mis tratamientos
+            </strong>
+            Hola Miguel, estos son todos los tratamientos que tienes registrados.
+            <div class="row">
+                <div class="col-sm-12 col-md-4">
+                    <div class="option red no-border shadow">
+                        <div class="mdl-card__supporting-text">
+                            <ul>
+                                <li><a href="#" class="extend">Lumbago crónico</a></li>
+                            </ul>
+                            <a href="#" class="extend"><i class="material-icons">keyboard_arrow_down</i></a>
+                        </div>
+                        <small>Día 1: Próxima alerta 00:00 hrs</small>
+
+                        <div class="treatments">
+
+                            <!-- Detail -->
+                            <div class="detail mb-4">
+                                <div class="icon">
+                                    <i class="material-icons">
+                                        edit
+                                    </i>
+                                </div>
+                                <div class="text">
+                                    Viadil
+                                    <small>Inyectar 5ml.</small>
+                                    <small class="green">Tomada hoy a las 08:18hrs.</small>
+                                </div>
+                                <div class="status done">
+                                    <i class="material-icons">
+                                        check_box
+                                    </i>
+                                </div>
+                            </div>
+
+                            <!-- Detail -->
+                            <div class="detail mb-4">
+                                <div class="icon">
+                                    <i class="material-icons">
+                                        edit
+                                    </i>
+                                </div>
+                                <div class="text">
+                                    Viadil
+                                    <small>Inyectar 5ml.</small>
+                                    <small class="red">No tomada.</small>
+                                </div>
+                                <div class="status undone">
+                                    <i class="material-icons">
+                                        indeterminate_check_box
+                                    </i>
+                                </div>
+                            </div>
+
+                            <!-- Detail -->
+                            <div class="detail mb-4">
+                                <div class="icon">
+                                    <i class="material-icons">
+                                        edit
+                                    </i>
+                                </div>
+                                <div class="text">
+                                    Viadil
+                                    <small>Inyectar 5ml.</small>
+                                    <small class="yellow">Pendiente.</small>
+                                </div>
+                                <div class="status">
+                                    <i class="material-icons">
+                                        check_box_outline_blank
+                                    </i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="option red no-border shadow">
+                            <div class="mdl-card__supporting-text">
+                                <ul>
+                                    <li><a href="#">Gastronteritis</a></li>
+                                </ul>
+                                <i class="material-icons">keyboard_arrow_down</i>
+                            </div>
+                        <small>Día 3: Próxima alerta 14:00 hrs</small>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="option red no-border shadow">
+                            <div class="mdl-card__supporting-text">
+                                <ul>
+                                    <li><a href="#">Infección urinaria</a></li>
+                                </ul>
+                                <i class="material-icons">keyboard_arrow_down</i>
+                            </div>
+                        <small class="complete">Tratamiento terminado</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="#" data-toggle="modal" data-target=".modal">
+        <div class="button-add">
+            <i class="material-icons">
+                add
+            </i>
+        </div>
+    </a>
+
+    <div class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <i class="material-icons">
+                        info
+                    </i>
+                </div>
+                <div class="modal-body">
+                    <div class="title mb-4">
+                        Nuevo paciente
+                    </div>
+                    <div class="text">
+                        Antes de continuar, necesitamos saber si el paciente tiene cuenta en MedFollow ?
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="btn-no" data-dismiss="modal">No</a>
+                    <a href="#" class="btn-si" data-dismiss="modal">Si</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

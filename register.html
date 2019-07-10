@@ -1,0 +1,193 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>MedFollow</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="css/bootstrap.css" media="screen,projection"/>
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <link rel="stylesheet" href="css/helpers.css?v=1.0">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body class="login-bg">
+  <div class="loader">
+    <div class="row h-100">
+      <div class="col-sm-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3 my-auto">
+        <img src="img/icon.png" class="mx-auto d-block">
+      </div>
+    </div>
+  </div>
+
+  <header class="header-login">
+    <div class="row">
+      <div class="col-sm-12">
+        <img src="img/logotipo-blanco.png" class="img-fluid ml-4 mt-4">
+      </div>
+    </div>
+  </header>
+
+  <div class="row h-100">
+    <div class="col-sm-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3 my-auto">
+      <div class="login-box intro-text text-center mx-auto d-block">
+        <div class="title mb-4">
+          Registro
+        </div>
+        Ingresa los datos solicitados y presiona el botón registrar.
+        <form class="mt-4">
+          <div class="form-row align-items-center">
+            <div class="col-sm-12 container-field-user">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text btlr">
+                    <i class="material-icons">
+                      supervised_user_circle
+                    </i>
+                  </div>
+                </div>
+                <input type="text" class="form-control form-control-lg user-input btrr" id="inlineFormInputGroup" placeholder="Nombres">
+              </div>
+            </div>
+            <div class="col-sm-12 container-field-user">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">
+                    <i class="material-icons">
+                      supervised_user_circle
+                    </i>
+                  </div>
+                </div>
+                <input type="text" class="form-control form-control-lg user-input" id="inlineFormInputGroup" placeholder="Apellidos">
+              </div>
+            </div>
+            <div class="col-sm-12 container-field-pass">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">
+                    <i class="material-icons">
+                      flag
+                    </i>
+                  </div>
+                </div>
+                <select class="form-control form-control-lg">
+                  <option>País</option>
+                  <option>Chile</option>
+                  <option>Argentina</option>
+                  <option>Peru</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-sm-12 container-field-user">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">
+                    <i class="material-icons">
+                      phone
+                    </i>
+                  </div>
+                </div>
+                <input type="text" class="form-control form-control-lg user-input" id="inlineFormInputGroup" placeholder="Teléfono">
+              </div>
+            </div>
+            <div class="col-sm-12 container-field-user">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">
+                    <i class="material-icons">
+                      calendar_today
+                    </i>
+                  </div>
+                </div>
+                <input type="text" class="form-control form-control-lg user-input" id="inlineFormInputGroup" placeholder="Fecha de nacimiento">
+              </div>
+            </div>
+            <div class="col-sm-12 container-field-user">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">
+                    <i class="material-icons">
+                      supervised_user_circle
+                    </i>
+                  </div>
+                </div>
+                <input type="text" class="form-control form-control-lg user-input" id="inlineFormInputGroup" placeholder="Nombre de usuario (opcional)">
+              </div>
+            </div>
+            <div class="col-sm-12 container-field-pass">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">
+                    <i class="material-icons">
+                      lock
+                    </i>
+                  </div>
+                </div>
+                <input type="text" class="form-control form-control-lg pass-input" id="inlineFormInputGroup" placeholder="Contraseña">
+              </div>
+            </div>
+            <div class="col-sm-12 container-field-pass">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text bblr">
+                    <i class="material-icons">
+                      lock
+                    </i>
+                  </div>
+                </div>
+                <input type="text" class="form-control form-control-lg pass-input bbrr" id="inlineFormInputGroup" placeholder="Repetir contraseña">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Acepto terminos y condiciones
+                </label>
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <a href="#" data-toggle="modal" data-target=".modal" class="enter d-block text-center mt-2 mb-4">Registrar</a>
+            </div>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <i class="material-icons">
+            info
+          </i>
+        </div>
+        <div class="modal-body">
+          <div class="title mb-4">
+            Completar información
+          </div>
+          <div class="text">
+            Es importante que completes toda la información solicitada, y aceptes los terminos y condiciones.
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="#" class="dismiss" data-dismiss="modal">Cerrar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
