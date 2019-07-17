@@ -35,9 +35,13 @@
 
         <div class="col-7 col-sm-3 position-relative">
             <div class="access-header">
-                <i class="material-icons mt-4 mr-2">
-                    notifications
-                </i>
+                <div class="notifications-container">
+                    <div class="number">4</div>
+                    <i class="material-icons mt-4 mr-2">
+                        notifications
+                    </i>
+                </div>
+
                 <div class="profile-img mr-2" style="background-image: url(./img/profile.jpg)"></div>
                 <i class="material-icons menu-button">
                     dehaze
@@ -48,6 +52,148 @@
 </header>
 <!-- /Header -->
 
+<!-- Notifications box -->
+<div class="notifications-detail" style="display: none;">
+    <div class="item">
+        <div class="description">
+            <div class="mdl-card__supporting-text">
+                <ul>
+                    <li><a href="#">Acompañante</a>, <strong>hoy 14:13 hrs.</strong></li>
+                </ul>
+            </div>
+            <small>Pedro acepto ser tu acompañamte, podrá ver tus tratamientos.</small>
+        </div>
+        <div class="delete-icon">
+            <i class="material-icons">delete_outline</i>
+        </div>
+    </div>
+    <div class="item">
+        <div class="description">
+            <div class="mdl-card__supporting-text">
+                <ul>
+                    <li><a href="#">Dependientes</a>, <strong>hoy 14:13 hrs.</strong></li>
+                </ul>
+            </div>
+            <small>Recuerda que puedes ingresar los tratamientos de tus hijos.</small>
+        </div>
+        <div class="delete-icon">
+            <i class="material-icons">delete_outline</i>
+        </div>
+    </div>
+    <div class="item">
+        <div class="description">
+            <div class="mdl-card__supporting-text">
+                <ul>
+                    <li><a href="#">Vincular</a>, <strong>hoy 14:13 hrs.</strong></li>
+                </ul>
+            </div>
+            <small>Maria acepto que la acompañes en sus tratamientos.</small>
+        </div>
+        <div class="delete-icon">
+            <i class="material-icons">delete_outline</i>
+        </div>
+    </div>
+    <div class="item">
+        <div class="description">
+            <div class="mdl-card__supporting-text">
+                <ul>
+                    <li><a href="#">Acompañante</a>, <strong>hoy 14:13 hrs.</strong></li>
+                </ul>
+            </div>
+            <small>Pedro acepto ser tu acompañamte, podrá ver tus tratamientos.</small>
+        </div>
+        <div class="delete-icon">
+            <i class="material-icons">delete_outline</i>
+        </div>
+    </div>
+    <div class="item">
+        <div class="description">
+            <div class="mdl-card__supporting-text">
+                <ul>
+                    <li><a href="#">Acompañante</a>, <strong>hoy 14:13 hrs.</strong></li>
+                </ul>
+            </div>
+            <small>Pedro acepto ser tu acompañamte, podrá ver tus tratamientos.</small>
+        </div>
+        <div class="delete-icon">
+            <i class="material-icons">delete_outline</i>
+        </div>
+    </div>
+</div>
+<!-- /Notifications box -->
+
+<!-- Quick actions -->
+<div class="quick-actions" style="display: none;">
+    <div class="item">
+        <div class="delete-icon">
+            <i class="material-icons">delete_outline</i>
+        </div>
+        <div class="description">
+            <div class="mdl-card__supporting-text">
+                <ul>
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#add-treatment">
+                            Ingresar mi tratamiento
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="delete-icon">
+            <i class="material-icons">supervised_user_circle</i>
+        </div>
+        <div class="description">
+            <div class="mdl-card__supporting-text">
+                <ul>
+                    <li>
+                        <a href="companion.html">
+                            Invitar un acompañante
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="delete-icon">
+            <i class="material-icons">supervised_user_circle</i>
+        </div>
+        <div class="description">
+            <div class="mdl-card__supporting-text">
+                <ul>
+                    <li><a href="#">Ingresar paciente</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="delete-icon">
+            <i class="material-icons">link</i>
+        </div>
+        <div class="description">
+            <div class="mdl-card__supporting-text">
+                <ul>
+                    <li><a href="behavior.html">Ver comportamiento</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="delete-icon">
+            <i class="material-icons">insert_drive_file</i>
+        </div>
+        <div class="description">
+            <div class="mdl-card__supporting-text">
+                <ul>
+                    <li><a href="#">Ver resumen</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Quick actions -->
 
 <!-- Side menu -->
 <div class="side-menu">
@@ -98,6 +244,14 @@
     </div>
 </div>
 <!-- /Side menu -->
+
+<a href="#" class="float-main-button">
+    <div class="button-add">
+        <i class="material-icons">
+            add
+        </i>
+    </div>
+</a>
 
 <div class="admin-content">
     <div class="row h-100">
@@ -155,14 +309,6 @@
             </div>
         </div>
     </div>
-
-    <a href="#" data-toggle="modal" data-target=".modal">
-        <div class="button-add">
-            <i class="material-icons">
-                add
-            </i>
-        </div>
-    </a>
 
     <div class="modal fade" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">

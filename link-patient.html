@@ -1,0 +1,349 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>MedFollow</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="css/bootstrap.css" media="screen,projection"/>
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <link rel="stylesheet" href="css/helpers.css?v=1.0">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+<div class="loader">
+  <div class="row h-100">
+    <div class="col-sm-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3 my-auto">
+      <img src="img/icon.png" class="mx-auto d-block">
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="header-session">
+  <div class="row">
+    <div class="col-5 col-sm-9 position-relative">
+      <div class="logo-header">
+        <img src="img/icon.png" class="img-fluid mt-4">
+      </div>
+    </div>
+
+    <div class="col-7 col-sm-3 position-relative">
+      <div class="access-header">
+        <div class="notifications-container">
+          <div class="number">4</div>
+          <i class="material-icons mt-4 mr-2">
+            notifications
+          </i>
+        </div>
+
+        <div class="profile-img mr-2" style="background-image: url(./img/profile.jpg)"></div>
+        <i class="material-icons menu-button">
+          dehaze
+        </i>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- /Header -->
+
+<!-- Notifications box -->
+<div class="notifications-detail" style="display: none;">
+  <div class="item">
+    <div class="description">
+      <div class="mdl-card__supporting-text">
+        <ul>
+          <li><a href="#">Acompañante</a>, <strong>hoy 14:13 hrs.</strong></li>
+        </ul>
+      </div>
+      <small>Pedro acepto ser tu acompañamte, podrá ver tus tratamientos.</small>
+    </div>
+    <div class="delete-icon">
+      <i class="material-icons">delete_outline</i>
+    </div>
+  </div>
+  <div class="item">
+    <div class="description">
+      <div class="mdl-card__supporting-text">
+        <ul>
+          <li><a href="#">Dependientes</a>, <strong>hoy 14:13 hrs.</strong></li>
+        </ul>
+      </div>
+      <small>Recuerda que puedes ingresar los tratamientos de tus hijos.</small>
+    </div>
+    <div class="delete-icon">
+      <i class="material-icons">delete_outline</i>
+    </div>
+  </div>
+  <div class="item">
+    <div class="description">
+      <div class="mdl-card__supporting-text">
+        <ul>
+          <li><a href="#">Vincular</a>, <strong>hoy 14:13 hrs.</strong></li>
+        </ul>
+      </div>
+      <small>Maria acepto que la acompañes en sus tratamientos.</small>
+    </div>
+    <div class="delete-icon">
+      <i class="material-icons">delete_outline</i>
+    </div>
+  </div>
+  <div class="item">
+    <div class="description">
+      <div class="mdl-card__supporting-text">
+        <ul>
+          <li><a href="#">Acompañante</a>, <strong>hoy 14:13 hrs.</strong></li>
+        </ul>
+      </div>
+      <small>Pedro acepto ser tu acompañamte, podrá ver tus tratamientos.</small>
+    </div>
+    <div class="delete-icon">
+      <i class="material-icons">delete_outline</i>
+    </div>
+  </div>
+  <div class="item">
+    <div class="description">
+      <div class="mdl-card__supporting-text">
+        <ul>
+          <li><a href="#">Acompañante</a>, <strong>hoy 14:13 hrs.</strong></li>
+        </ul>
+      </div>
+      <small>Pedro acepto ser tu acompañamte, podrá ver tus tratamientos.</small>
+    </div>
+    <div class="delete-icon">
+      <i class="material-icons">delete_outline</i>
+    </div>
+  </div>
+</div>
+<!-- /Notifications box -->
+
+<!-- Quick actions -->
+<div class="quick-actions" style="display: none;">
+  <div class="item">
+    <div class="delete-icon">
+      <i class="material-icons">delete_outline</i>
+    </div>
+    <div class="description">
+      <div class="mdl-card__supporting-text">
+        <ul>
+          <li>
+            <a href="#" data-toggle="modal" data-target="#add-treatment">
+              Ingresar mi tratamiento
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="item">
+    <div class="delete-icon">
+      <i class="material-icons">supervised_user_circle</i>
+    </div>
+    <div class="description">
+      <div class="mdl-card__supporting-text">
+        <ul>
+          <li>
+            <a href="companion.html">
+              Invitar un acompañante
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="item">
+    <div class="delete-icon">
+      <i class="material-icons">supervised_user_circle</i>
+    </div>
+    <div class="description">
+      <div class="mdl-card__supporting-text">
+        <ul>
+          <li><a href="#">Ingresar paciente</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="item">
+    <div class="delete-icon">
+      <i class="material-icons">link</i>
+    </div>
+    <div class="description">
+      <div class="mdl-card__supporting-text">
+        <ul>
+          <li><a href="behavior.html">Ver comportamiento</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="item">
+    <div class="delete-icon">
+      <i class="material-icons">insert_drive_file</i>
+    </div>
+    <div class="description">
+      <div class="mdl-card__supporting-text">
+        <ul>
+          <li><a href="#">Ver resumen</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /Quick actions -->
+
+<!-- Side menu -->
+<div class="side-menu">
+  <div class="header">
+    <div class="close">
+      <i class="material-icons">
+        close
+      </i>
+    </div>
+
+    <div class="profile-img" style="background-image: url(./img/profile.jpg)"></div>
+    <div class="info">
+      <strong>Miguel Martinez</strong>
+      mmartinez@gmail.com
+    </div>
+  </div>
+  <div class="content">
+    Dependientes
+    <div class="item">
+      <div class="mdl-card__supporting-text">
+        <i class="material-icons">supervised_user_circle</i>
+        Luís Martinez
+      </div>
+    </div>
+    <div class="item">
+      <div class="mdl-card__supporting-text">
+        <i class="material-icons">supervised_user_circle</i>
+        Jose Martinez
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    Pacientes vinculados
+    <div class="item">
+      <div class="mdl-card__supporting-text">
+        <i class="material-icons">supervised_user_circle</i>
+        María Soto
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="item">
+      <div class="mdl-card__supporting-text">
+        <i class="material-icons">exit_to_app</i>
+        <a href="index.html">Cerrar</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /Side menu -->
+
+<a href="#" class="float-main-button">
+  <div class="button-add">
+    <i class="material-icons">
+      add
+    </i>
+  </div>
+</a>
+
+<div class="admin-content">
+  <div class="row h-100">
+    <div class="col-sm-12 col-md-10 offset-md-1 margin-top-admin">
+      <strong class="mb-2">
+        <a href="javascript:history.back();" class="back">
+          <i class="material-icons">arrow_back</i><br>
+        </a>
+        Vincular paciente
+      </strong>
+      Ingresa el nombre de la persona que quieres acompañar y al menos<br>uno de los datos de contacto para enviar la invitación.
+      <div class="row">
+        <div class="col-12">
+          <form>
+            <div class="form-row">
+              <div class="form-group col-md-4">
+                <label for="inputEmail4">Nombre de tu acompañante</label>
+                <input type="text" class="form-control" id="inputEmail4" placeholder="Ej: Manuel">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputPassword4">Email</label>
+                <input type="text" class="form-control" id="inputPassword4" placeholder="Ej: manuel@gmail.com">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputPassword4">Teléfono (9 dígitos)</label>
+                <input type="text" class="form-control" id="inputPassword4" placeholder="Ej: 955554444">
+              </div>
+              <div class="form-group col-12">
+                &nbsp;
+              </div>
+              <div class="form-group col-md-4 offset-md-8">
+                <button type="submit" class="button-submit button-create">Enviar invitación</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <i class="material-icons">
+            info
+          </i>
+        </div>
+        <div class="modal-body">
+          <div class="title mb-4">
+            Solicitud enviada
+          </div>
+          <div class="text">
+            Hemos enviado tu solicitud a "Maria" de forma exitosa.
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="#" class="dismiss" data-dismiss="modal">Cerrar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="add-treatment" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <i class="material-icons">
+            info
+          </i>
+        </div>
+        <div class="modal-body">
+          <div class="title mb-4">
+            Ingresar tratamiento
+          </div>
+          <div class="text">
+            Tu eres el paciente y necesitas ingresar tus medicamentos para realizar el seguimiento de estos y recordatorio.
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="treatment.html" class="btn-si">Continuar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

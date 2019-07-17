@@ -1,12 +1,3 @@
-// var htmlLoader = '<div class="loader">\n' +
-//                 '    <div class="row h-100">\n' +
-//                 '      <div class="col-sm-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3 my-auto">\n' +
-//                 '        <img src="img/icon.png" class="mx-auto d-block">\n' +
-//                 '      </div>\n' +
-//                 '    </div>\n' +
-//                 '  </div>';
-// jQuery('body').prepend(htmlLoader);
-
 /**
  * nextThrough
  * jQuery plugin to find the next element that matches a selector,
@@ -41,16 +32,38 @@ $(document).ready(function(){
         $('.content-loaded').removeClass('d-none');
     });
 
+    // $('.open-modal').click(function(){
+    //     var t = $(this).data('title-modal'),
+    //         c = $(this).data('content-modal'),
+    //         t = $(this).data('target'),
+    //         $modal = $('.modal');
+    //
+    //     $modal.find('.title').text(t);
+    //     $modal.find('.text').text(c);
+    // });
+
     $('.menu-button').click(function(){
         $(".side-menu").animate({
             "right":"0"
         }, "slow");
     });
 
+    $('.float-main-button').click(function(){
+        $('.quick-actions').fadeToggle();
+    });
+
     $('.side-menu .header > .close').click(function(){
         $(".side-menu").animate({
             "right":"-320px"
         }, "slow");
+    });
+
+    $('.notifications-container').click(function(){
+        $('.notifications-detail').fadeToggle();
+    });
+
+    $('.notifications-container').on('.delete-icon .material-icons', 'click', function(){
+        console.log('delete notification');
     });
 
     $('button.button-next').click(function(){
