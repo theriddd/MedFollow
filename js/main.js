@@ -37,6 +37,7 @@ $(document).ready(function(){
         autoplay: false,
         margin:10,
         items: 1,
+        animateOut: 'fadeOut',
         nav:true
     });
 

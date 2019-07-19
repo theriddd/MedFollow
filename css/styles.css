@@ -1,6 +1,7 @@
 @charset "UTF-8";
 html,
 body {
+  background-color: #F9F9F9;
   height: 100%;
   position: relative;
   font-size: 16px;
@@ -378,7 +379,7 @@ header.header-session .access-header i.material-icons.menu-button {
 }
 
 .button-add {
-  position: absolute;
+  position: fixed;
   width: 60px;
   height: 60px;
   bottom: 25px;
@@ -679,8 +680,56 @@ header.header-session .access-header i.material-icons.menu-button {
   display: inline-block;
   width: auto;
 }
+@media (max-width: 600px) {
+  .admin-content .owl-treatments .item .remedy .text {
+    margin-left: 20%;
+  }
+}
 .admin-content .owl-treatments .item .remedy .text small {
   display: block;
+}
+.admin-content .owl-treatments .item .behavior-graphics {
+  margin-top: 25px;
+}
+.admin-content .owl-treatments .item .behavior-graphics .dot {
+  width: 25px;
+  height: 25px;
+  background-color: #554a4c;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 15px;
+}
+.admin-content .owl-treatments .item .behavior-graphics .dot.red {
+  background-color: #FF4355;
+}
+.admin-content .owl-treatments .item .behavior-graphics .dot.yellow {
+  background-color: #FBAA21;
+}
+.admin-content .owl-treatments .item .behavior-graphics .dot.blue {
+  background-color: #03B7E5;
+}
+.admin-content .owl-treatments .item .behavior-graphics .title {
+  font-size: 1.2rem;
+  margin-bottom: 0px;
+}
+.admin-content .owl-treatments .item .behavior-graphics .performance {
+  display: block;
+}
+@media (max-width: 600px) {
+  .admin-content .owl-treatments .item .behavior-graphics .icons {
+    margin-bottom: 50px;
+  }
+}
+.admin-content .owl-treatments .item .behavior-graphics .icons .status {
+  display: inline-block;
+  top: 0;
+  width: auto;
+}
+.admin-content .owl-treatments .item .behavior-graphics .icons .status.done {
+  color: #03B7E5;
+}
+.admin-content .owl-treatments .item .behavior-graphics .icons .status.undone {
+  color: #FF4355;
 }
 .admin-content .modal .btn-no {
   margin-right: 15px;

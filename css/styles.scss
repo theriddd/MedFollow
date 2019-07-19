@@ -21,6 +21,7 @@ $placeholderColor: #c3c3c3;
 
 html,
 body {
+  background-color: $colorBackgroundAdmin;
   height:100%;
   position: relative;
   font-size: 16px;
@@ -410,7 +411,7 @@ header{
 }
 
 .button-add{
-  position: absolute;
+  position: fixed;
   width: 60px;
   height: 60px;
   bottom: 25px;
@@ -750,11 +751,58 @@ header{
           margin-left: 8%;
           display: inline-block;
           width: auto;
+          @media(max-width: 600px){
+            margin-left: 20%;
+          }
           small{
             display: block;
           }
         }
       }
+      .behavior-graphics{
+        margin-top: 25px;
+        .dot{
+          width: 25px;
+          height: 25px;
+          background-color: $colorGray;
+          border-radius: 50%;
+          display: block;
+          margin: 0 auto 15px;
+          &.red{
+            background-color: $colorRed;
+          }
+          &.yellow{
+            background-color: $colorYellow;
+          }
+          &.blue{
+            background-color: $colorBlue;
+          }
+        }
+        .title{
+          font-size: 1.2rem;
+          margin-bottom: 0px;
+        }
+        .performance{
+          display: block;
+        }
+        .icons{
+          @media(max-width: 600px){
+            margin-bottom: 50px;
+          }
+          .status{
+            display: inline-block;
+            top: 0;
+            width: auto;
+            &.done{
+              color: $colorBlue;
+            }
+            &.undone{
+              color: $colorRed;
+            }
+          }
+        }
+      }
+
     }
   }
   .modal{
