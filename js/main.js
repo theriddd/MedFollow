@@ -55,6 +55,7 @@ $(document).ready(function(){
         $(".side-menu").animate({
             "right":"0"
         }, "slow");
+        $('.transparency-layer').fadeIn('fast');
     });
 
     $('.float-main-button').click(function(){
@@ -65,6 +66,7 @@ $(document).ready(function(){
         $(".side-menu").animate({
             "right":"-320px"
         }, "slow");
+        $('.transparency-layer').fadeOut('fast');
     });
 
     $('.notifications-container').click(function(){
