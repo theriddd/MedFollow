@@ -114,4 +114,8 @@ $(document).ready(function(){
             extended = false;
         }
     });
+
+    $('.container-hours').find(function(){
+
+    });
 });

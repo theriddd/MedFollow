@@ -809,6 +809,65 @@ header{
       }
     }
   }
+  .container-hours{
+    width: 400px;
+    position: relative;
+    margin-top: 25px;
+    @media(max-width: 600px){
+      width: 100%;
+    }
+    .hour{
+      display: inline-block;
+      width: 20%;
+      position: absolute;
+      top: 0;
+    }
+    .container-detail{
+      margin-left: 60px;
+      .hour-detail{
+        display: inline-block;
+        loat: right;
+        width: 60%;
+        position: relative;
+        @media(max-width: 600px){
+          width: 100%;
+        }
+        .dot{
+          width: 15px;
+          height: 15px;
+          background-color: $colorGray;
+          border-radius: 50%;
+          display: inline-block;
+          &.red{
+            background-color: $colorRed;
+          }
+          &.yellow{
+            background-color: $colorYellow;
+          }
+          &.blue{
+            background-color: $colorBlue;
+          }
+        }
+        small{
+          margin-left: 20px;
+          color: $colorLightGray;
+          display: block;
+        }
+        .status{
+          position: absolute;
+          right: 0;
+          top: 0;
+          &.done{
+            color: $colorBlue;
+          }
+          &.undone{
+            color: $colorRed;
+          }
+        }
+      }
+    }
+
+  }
   .modal{
     .btn-no{
       margin-right: 15px;
