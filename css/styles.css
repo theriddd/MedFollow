@@ -661,33 +661,6 @@ header.header-session .access-header i.material-icons.menu-button {
 .admin-content .owl-treatments .item .title {
   margin-bottom: 25px;
 }
-.admin-content .owl-treatments .item .remedy {
-  background-color: #F1F2F2;
-  padding: 10px;
-}
-.admin-content .owl-treatments .item .remedy .icon {
-  display: inline-block;
-  top: 0;
-  position: absolute;
-  width: 8%;
-}
-.admin-content .owl-treatments .item .remedy .icon i.material-icons {
-  margin-left: 15px;
-  margin-top: 20px;
-}
-.admin-content .owl-treatments .item .remedy .text {
-  margin-left: 8%;
-  display: inline-block;
-  width: auto;
-}
-@media (max-width: 600px) {
-  .admin-content .owl-treatments .item .remedy .text {
-    margin-left: 20%;
-  }
-}
-.admin-content .owl-treatments .item .remedy .text small {
-  display: block;
-}
 .admin-content .owl-treatments .item .behavior-graphics {
   margin-top: 25px;
 }
@@ -730,6 +703,37 @@ header.header-session .access-header i.material-icons.menu-button {
 }
 .admin-content .owl-treatments .item .behavior-graphics .icons .status.undone {
   color: #FF4355;
+}
+.admin-content .remedy {
+  background-color: #F1F2F2;
+  padding: 20px;
+}
+.admin-content .remedy .icon {
+  display: inline-block;
+  top: 0;
+  position: absolute;
+  width: 8%;
+}
+.admin-content .remedy .icon i.material-icons {
+  margin-left: 15px;
+  margin-top: 20px;
+}
+.admin-content .remedy .text {
+  margin-left: 8%;
+  display: inline-block;
+  width: auto;
+}
+.admin-content .remedy .text.subtext {
+  color: #a4aab6;
+  margin-left: 0;
+}
+@media (max-width: 600px) {
+  .admin-content .remedy .text {
+    margin-left: 20%;
+  }
+}
+.admin-content .remedy .text small {
+  display: block;
 }
 .admin-content .modal .btn-no {
   margin-right: 15px;

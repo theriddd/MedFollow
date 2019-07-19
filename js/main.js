@@ -37,8 +37,8 @@ $(document).ready(function(){
         autoplay: false,
         margin:10,
         items: 1,
-        animateOut: 'fadeOut',
-        nav:true
+        nav: true,
+        navText: ["<div class='prev'></div>", "<div class='next'></div>"]
     });
 
     // $('.open-modal').click(function(){

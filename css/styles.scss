@@ -732,33 +732,6 @@ header{
       .title{
         margin-bottom: 25px;
       }
-      .remedy{
-        background-color: #F1F2F2;
-        padding: 10px;
-        .icon{
-          display: inline-block;
-          top: 0;
-          position: absolute;
-          width: 8%;
-          i{
-            &.material-icons{
-              margin-left: 15px;
-              margin-top: 20px;
-            }
-          }
-        }
-        .text{
-          margin-left: 8%;
-          display: inline-block;
-          width: auto;
-          @media(max-width: 600px){
-            margin-left: 20%;
-          }
-          small{
-            display: block;
-          }
-        }
-      }
       .behavior-graphics{
         margin-top: 25px;
         .dot{
@@ -803,6 +776,37 @@ header{
         }
       }
 
+    }
+  }
+  .remedy{
+    background-color: #F1F2F2;
+    padding: 20px;
+    .icon{
+      display: inline-block;
+      top: 0;
+      position: absolute;
+      width: 8%;
+      i{
+        &.material-icons{
+          margin-left: 15px;
+          margin-top: 20px;
+        }
+      }
+    }
+    .text{
+      margin-left: 8%;
+      display: inline-block;
+      width: auto;
+      &.subtext{
+        color: $colorLightGray;
+        margin-left: 0;
+      }
+      @media(max-width: 600px){
+        margin-left: 20%;
+      }
+      small{
+        display: block;
+      }
     }
   }
   .modal{
