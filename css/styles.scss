@@ -723,27 +723,37 @@ header{
       }
     }
   }
-  .remedy{
-    background-color: #F1F2F2;
-    padding: 10px;
-    .icon{
-      display: inline-block;
-      top: 0;
-      position: absolute;
-      width: 8%;
-      i{
-        &.material-icons{
-          margin-left: 15px;
-          margin-top: 20px;
-        }
+  .owl-treatments{
+    .item{
+      .small-title{
+
       }
-    }
-    .text{
-      margin-left: 8%;
-      display: inline-block;
-      width: auto;
-      small{
-        display: block;
+      .title{
+        margin-bottom: 25px;
+      }
+      .remedy{
+        background-color: #F1F2F2;
+        padding: 10px;
+        .icon{
+          display: inline-block;
+          top: 0;
+          position: absolute;
+          width: 8%;
+          i{
+            &.material-icons{
+              margin-left: 15px;
+              margin-top: 20px;
+            }
+          }
+        }
+        .text{
+          margin-left: 8%;
+          display: inline-block;
+          width: auto;
+          small{
+            display: block;
+          }
+        }
       }
     }
   }

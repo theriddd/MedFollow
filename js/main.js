@@ -32,6 +32,14 @@ $(document).ready(function(){
         $('.content-loaded').removeClass('d-none');
     });
 
+    $('.owl-treatments').owlCarousel({
+        loop:true,
+        autoplay: false,
+        margin:10,
+        items: 1,
+        nav:true
+    });
+
     // $('.open-modal').click(function(){
     //     var t = $(this).data('title-modal'),
     //         c = $(this).data('content-modal'),
