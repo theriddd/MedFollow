@@ -452,12 +452,28 @@ header{
     &::placeholder{
       color: $placeholderColor;
     }
+    &.error{
+      border-right: 5px solid $colorRed;
+    }
   }
   .pass-input{
     font-size: 16px;
     height: 60px;
     &::placeholder{
       color: $placeholderColor;
+    }
+    &.error{
+      border-right: 5px solid $colorRed;
+    }
+  }
+  span{
+    &.error{
+      border-right: 5px solid $colorRed;
+    }
+  }
+  a{
+    &.error{
+      color: $colorRed;
     }
   }
   select{
@@ -468,13 +484,14 @@ header{
   .form-check{
     padding-left: 24px;
   }
-  a.enter{
+  button.enter{
     color: #fff;
     background-color: #29B7E5;
     text-decoration: none;
     width: 100%;
     padding: 1rem;
     border-radius: 5px;
+    border: 0;
   }
   a{
     &.create-account,

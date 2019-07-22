@@ -11,185 +11,232 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link type="text/css" rel="stylesheet" href="css/bootstrap.css" media="screen,projection"/>
   <link rel="stylesheet" href="css/styles.css?v=1.0">
-  <link rel="stylesheet" href="css/helpers.css?v=1.0">
   <link rel="stylesheet" href="css/lib/owl/owl.carousel.css?v=1.0">
+  <link rel="stylesheet" href="css/lib/select2/select2.min.css"/>
+  <link rel="stylesheet" href="css/helpers.css?v=1.0">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body class="login-bg">
-  <div class="loader">
-    <div class="row h-100">
-      <div class="col-sm-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3 my-auto">
-        <img src="img/icon.png" class="mx-auto d-block">
-      </div>
-    </div>
-  </div>
-
-  <header class="header-login">
-    <div class="row">
-      <div class="col-sm-12">
-        <img src="img/logotipo-blanco.png" class="img-fluid ml-4 mt-4">
-      </div>
-    </div>
-  </header>
-
+<div class="loader">
   <div class="row h-100">
     <div class="col-sm-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3 my-auto">
-      <div class="login-box intro-text text-center mx-auto d-block">
-        <div class="title mb-4">
-          Registro
-        </div>
-        Ingresa los datos solicitados y presiona el botón registrar.
-        <form class="mt-4">
-          <div class="form-row align-items-center">
-            <div class="col-sm-12 container-field-user">
-              <div class="input-group">
-                <div class="input-group-prepend">
-                  <div class="input-group-text btlr">
-                    <i class="material-icons">
-                      supervised_user_circle
-                    </i>
-                  </div>
+      <img src="img/icon.png" class="mx-auto d-block">
+    </div>
+  </div>
+</div>
+
+<header class="header-login">
+  <div class="row">
+    <div class="col-sm-12">
+      <img src="img/logotipo-blanco.png" class="img-fluid ml-4 mt-4">
+    </div>
+  </div>
+</header>
+
+<div class="row h-100">
+  <div class="col-sm-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3 my-auto">
+    <div class="login-box intro-text text-center mx-auto d-block">
+      <div class="title mb-4">
+        Registro
+      </div>
+      Ingresa los datos solicitados y presiona el botón registrar.
+      <form class="mt-4" id="formRegister">
+        <div class="form-row align-items-center">
+          <div class="col-sm-12 container-field-user">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text btlr">
+                  <i class="material-icons">
+                    supervised_user_circle
+                  </i>
                 </div>
-                <input type="text" class="form-control form-control-lg user-input btrr" id="inlineFormInputGroup" placeholder="Nombres">
               </div>
+              <input type="text"
+                     class="form-control form-control-lg user-input btrr noEmpty"
+                     id="name"
+                     placeholder="Nombres">
             </div>
-            <div class="col-sm-12 container-field-user">
-              <div class="input-group">
-                <div class="input-group-prepend">
-                  <div class="input-group-text">
-                    <i class="material-icons">
-                      supervised_user_circle
-                    </i>
-                  </div>
+          </div>
+          <div class="col-sm-12 container-field-user">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <i class="material-icons">
+                    supervised_user_circle
+                  </i>
                 </div>
-                <input type="text" class="form-control form-control-lg user-input" id="inlineFormInputGroup" placeholder="Apellidos">
               </div>
+              <input type="text"
+                     class="form-control form-control-lg user-input noEmpty"
+                     id="lastName"
+                     placeholder="Apellidos">
             </div>
-            <div class="col-sm-12 container-field-pass">
-              <div class="input-group">
-                <div class="input-group-prepend">
-                  <div class="input-group-text">
-                    <i class="material-icons">
-                      flag
-                    </i>
-                  </div>
+          </div>
+          <div class="col-sm-12 container-field-pass">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <i class="material-icons">
+                    flag
+                  </i>
                 </div>
-                <select class="form-control form-control-lg">
-                  <option>País</option>
-                  <option>Chile</option>
-                  <option>Argentina</option>
-                  <option>Peru</option>
-                </select>
               </div>
+              <select class="form-control form-control-lg noEmpty" id="country">
+                <option value="" disabled="disabled">País</option>
+                <option selected>Chile</option>
+                <option>Argentina</option>
+                <option>Peru</option>
+              </select>
             </div>
-            <div class="col-sm-12 container-field-user">
-              <div class="input-group">
-                <div class="input-group-prepend">
-                  <div class="input-group-text">
-                    <i class="material-icons">
-                      phone
-                    </i>
-                  </div>
+          </div>
+          <div class="col-sm-12 container-field-user">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <i class="material-icons">
+                    phone
+                  </i>
                 </div>
-                <input type="text" class="form-control form-control-lg user-input" id="inlineFormInputGroup" placeholder="Teléfono">
               </div>
+              <input type="text"
+                     class="form-control form-control-lg user-input noEmpty"
+                     id="phone"
+                     placeholder="Teléfono">
             </div>
-            <div class="col-sm-12 container-field-user">
-              <div class="input-group">
-                <div class="input-group-prepend">
-                  <div class="input-group-text">
-                    <i class="material-icons">
-                      calendar_today
-                    </i>
-                  </div>
+          </div>
+          <div class="col-sm-12 container-field-user">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <i class="material-icons">
+                    calendar_today
+                  </i>
                 </div>
-                <input type="text" class="form-control form-control-lg user-input" id="inlineFormInputGroup" placeholder="Fecha de nacimiento">
               </div>
+              <input type="text"
+                     class="form-control form-control-lg user-input noEmpty"
+                     id="birthDate"
+                     placeholder="Fecha de nacimiento">
             </div>
-            <div class="col-sm-12 container-field-user">
-              <div class="input-group">
-                <div class="input-group-prepend">
-                  <div class="input-group-text">
-                    <i class="material-icons">
-                      supervised_user_circle
-                    </i>
-                  </div>
+          </div>
+          <div class="col-sm-12 container-field-user">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <i class="material-icons">
+                    supervised_user_circle
+                  </i>
                 </div>
-                <input type="text" class="form-control form-control-lg user-input" id="inlineFormInputGroup" placeholder="Nombre de usuario (opcional)">
               </div>
+              <input type="text"
+                     class="form-control form-control-lg user-input noEmpty"
+                     id="userName"
+                     placeholder="Nombre de usuario (opcional)">
             </div>
-            <div class="col-sm-12 container-field-pass">
-              <div class="input-group">
-                <div class="input-group-prepend">
-                  <div class="input-group-text">
-                    <i class="material-icons">
-                      lock
-                    </i>
-                  </div>
+          </div>
+          <div class="col-sm-12 container-field-pass">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <i class="material-icons">
+                    lock
+                  </i>
                 </div>
-                <input type="text" class="form-control form-control-lg pass-input" id="inlineFormInputGroup" placeholder="Contraseña">
               </div>
+              <input type="password"
+                     class="form-control form-control-lg pass-input noEmpty"
+                     id="password"
+                     placeholder="Contraseña">
             </div>
-            <div class="col-sm-12 container-field-pass">
-              <div class="input-group">
-                <div class="input-group-prepend">
-                  <div class="input-group-text bblr">
-                    <i class="material-icons">
-                      lock
-                    </i>
-                  </div>
+          </div>
+          <div class="col-sm-12 container-field-pass">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text bblr">
+                  <i class="material-icons">
+                    lock
+                  </i>
                 </div>
-                <input type="text" class="form-control form-control-lg pass-input bbrr" id="inlineFormInputGroup" placeholder="Repetir contraseña">
               </div>
+              <input type="password"
+                     class="form-control form-control-lg pass-input bbrr noEmpty"
+                     id="repeatPassword"
+                     placeholder="Repetir contraseña">
             </div>
-            <div class="form-group">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheck">
-                <label class="form-check-label" for="gridCheck">
+          </div>
+          <div class="form-group mt-2">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck">
+                <a href="#"
+                   class="link-terms"
+                   data-toggle="modal"
+                   data-target="#modal-terms">
                   Acepto terminos y condiciones
-                </label>
-              </div>
-            </div>
-            <div class="col-sm-12">
-              <a href="#" data-toggle="modal" data-target=".modal" class="enter d-block text-center mt-2 mb-4">Registrar</a>
+                </a>
+              </label>
             </div>
           </div>
-        </form>
+          <div class="col-sm-12">
+            <button href="#"
+                    class="enter d-block text-center mt-2 mb-4">
+              Registrar
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
 
+<div class="modal fade" id="modal-error" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <i class="material-icons">
+          info
+        </i>
+      </div>
+      <div class="modal-body">
+        <div class="title mb-4">
+          Completar información
+        </div>
+        <div class="text">
+          Es importante que completes toda la información solicitada, y aceptes los terminos y condiciones.
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="#" class="dismiss" data-dismiss="modal">Cerrar</a>
       </div>
     </div>
   </div>
+</div>
 
-  <div class="modal fade" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <i class="material-icons">
-            info
-          </i>
+<div class="modal fade" id="modal-terms" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="title mb-4">
+          Terminos y condiciones
         </div>
-        <div class="modal-body">
-          <div class="title mb-4">
-            Completar información
-          </div>
-          <div class="text">
-            Es importante que completes toda la información solicitada, y aceptes los terminos y condiciones.
-          </div>
+        <div class="text">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam arcu vulputate taciti ut ullamcorper penatibus inceptos diam parturient pulvinar malesuada justo cursus feugiat, dapibus curabitur dis dui pharetra hac consequat nam netus nisl rutrum vestibulum porta. Diam purus ultricies orci nullam quis conubia commodo cum, suspendisse fusce porta enim volutpat tortor venenatis, sem justo senectus ac laoreet nascetur fames.</p>
+          <p>Pellentesque varius blandit bibendum ultrices eleifend tortor venenatis nisi, phasellus nunc potenti placerat enim et semper natoque pulvinar, dignissim porta pharetra elementum dictum lacus tellus. Felis facilisi habitasse turpis per dictumst vitae montes velit lectus sociosqu, orci nisi congue vestibulum in magnis venenatis neque convallis, feugiat facilisis aliquam curabitur justo enim iaculis mauris parturient. Velit porttitor at tristique per quis non faucibus torquent accumsan imperdiet eget placerat aliquet, massa montes nibh malesuada rutrum morbi iaculis enim facilisi hac venenatis.</p>
         </div>
-        <div class="modal-footer">
-          <a href="#" class="dismiss" data-dismiss="modal">Cerrar</a>
-        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="#" class="dismiss" data-dismiss="modal">Cerrar</a>
       </div>
     </div>
   </div>
+</div>
 
 
-
-
-  <script type="text/javascript" src="js/jquery.js"></script>
-  <script type="text/javascript" src="js/bootstrap.js"></script>
-  <script type="text/javascript" src="js/lib/owl/owl.carousel.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/lib/owl/owl.carousel.js"></script>
+<script type="text/javascript" src="js/lib/select2/select2.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

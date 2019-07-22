@@ -27,6 +27,7 @@
 } ( jQuery ) );
 
 $(document).ready(function(){
+    $('select').select2();
     $('.loader').fadeOut(500, function(){
         $(this).remove();
         $('.content-loaded').removeClass('d-none');
@@ -119,5 +120,57 @@ $(document).ready(function(){
 
     $('.container-hours').find(function(){
 
+    });
+
+    //validations
+    var isError = false;
+    var emptyErrors = function(){
+        $('input').removeClass('error');
+        $('span.select2-selection__rendered').removeClass('error');
+        $(".link-terms").removeClass('error')
+    } || {};
+    $('#formRegister').submit(function(e){
+        e.preventDefault();
+        var $modalError = $('#modal-error');
+        emptyErrors();
+        $('.noEmpty').each(function(){
+            if($(this).val() === "")
+            {
+                isError = true;
+                $(this).addClass('error');
+            }
+        });
+        $('select').each(function(){
+            if($('select').val() === "")
+            {
+                isError = true;
+                $('span.select2-selection__rendered').addClass('error');
+            }
+        });
+
+        if($('#password').val() !== $('#repeatPassword').val())
+        {
+            isError = true;
+            $('#password').addClass('error');
+            $('#repeatPassword').addClass('error');
+            $modalError.find('.title').text('Error');
+            $modalError.find('.text').text('Las contraseñas no coinciden.');
+        }
+
+        if(!$("#gridCheck").is(':checked'))
+        {
+            isError = true;
+            $(".link-terms").addClass('error')
+        }
+
+        if(isError === true)
+        {
+            $('#modal-error').modal();
+            return false;
+        }
+        else
+        {
+            $('#formRegister').submit();
+        }
     });
 });
