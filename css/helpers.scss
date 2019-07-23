@@ -132,6 +132,32 @@ $placeholderColor: #c3c3c3;
   }
 }
 
+.admin-content{
+  .select2{
+    &-container--default{
+      .select2-selection--single{
+        background-color: #fff;
+        border: unset;
+        border-radius: 0;
+        height: 100%;
+        .select2-selection__arrow{
+          top: 6px;
+        }
+        .select2-selection__rendered{
+          color: #c3c3c3;
+          line-height: 28px;
+          text-align: left;
+          padding-left: 15px;
+          padding-top: 4px;
+          border: 1px solid #deefff;
+          background-color: #f5faff;
+          height: calc(1.5em + 0.75rem + 2px);
+        }
+      }
+    }
+  }
+}
+
 /* Others */
 a{
   color: $colorWhite;
