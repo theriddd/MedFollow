@@ -2,6 +2,7 @@
 html,
 body {
   background-color: #F9F9F9;
+  font-family: "Montserrat", sans-serif;
   height: 100%;
   position: relative;
   font-size: 16px;
@@ -252,7 +253,7 @@ header.header-session .access-header i.material-icons.menu-button {
     box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.21);
     right: 0;
     left: 0;
-    top: 0;
+    bottom: 16%;
     margin: 60px auto 0 auto;
     width: 95vw;
   }
@@ -282,7 +283,7 @@ header.header-session .access-header i.material-icons.menu-button {
 .quick-actions .item .description .mdl-card__supporting-text ul li a {
   text-decoration: none;
   color: inherit;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 .quick-actions .item .description .mdl-card__supporting-text ul li strong {
   color: #03B7E5;
@@ -318,6 +319,11 @@ header.header-session .access-header i.material-icons.menu-button {
 .side-menu .header {
   margin: 3rem 3rem;
   height: 50px;
+}
+@media (max-width: 480px) {
+  .side-menu .header {
+    margin: 3rem 2rem;
+  }
 }
 .side-menu .header .close {
   position: absolute;
@@ -402,8 +408,10 @@ header.header-session .access-header i.material-icons.menu-button {
   transform: rotate(360deg);
 }
 
-#formRegister {
-  background-color: #fff;
+@media (max-width: 480px) {
+  .login-box {
+    margin-top: 100px;
+  }
 }
 
 .title {
@@ -484,6 +492,11 @@ header.header-session .access-header i.material-icons.menu-button {
     margin: 0 15px;
   }
 }
+@media (max-width: 480px) {
+  .admin-content {
+    margin-bottom: 100px;
+  }
+}
 .admin-content strong {
   display: block;
   color: #554a4c;
@@ -529,6 +542,7 @@ header.header-session .access-header i.material-icons.menu-button {
 .admin-content .option a {
   text-decoration: none;
   color: inherit;
+  font-weight: 700;
 }
 .admin-content .option .mdl-card__supporting-text ul {
   color: #554a4c;
@@ -781,6 +795,7 @@ header.header-session .access-header i.material-icons.menu-button {
   loat: right;
   width: 60%;
   position: relative;
+  margin-bottom: 10px;
 }
 @media (max-width: 600px) {
   .admin-content .container-hours .container-detail .hour-detail {
@@ -788,8 +803,8 @@ header.header-session .access-header i.material-icons.menu-button {
   }
 }
 .admin-content .container-hours .container-detail .hour-detail .dot {
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
   background-color: #554a4c;
   border-radius: 50%;
   display: inline-block;

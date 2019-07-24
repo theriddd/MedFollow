@@ -22,6 +22,7 @@ $placeholderColor: #c3c3c3;
 html,
 body {
   background-color: $colorBackgroundAdmin;
+  font-family: 'Montserrat', sans-serif;
   height:100%;
   position: relative;
   font-size: 16px;
@@ -279,7 +280,7 @@ header{
     box-shadow: 0 5px 10px 5px rgba(0,0,0,.21);
     right: 0;
     left: 0;
-    top: 0;
+    bottom: 16%;
     margin: 60px auto 0 auto;
     width: 95vw;
   }
@@ -305,7 +306,7 @@ header{
             a{
               text-decoration: none;
               color: inherit;
-              font-size: 1rem;
+              font-size: .9rem;
             }
             strong{
               color: $colorBlue;
@@ -348,6 +349,9 @@ header{
   .header{
     margin: 3rem 3rem;
     height: 50px;
+    @media(max-width: 480px){
+      margin: 3rem 2rem;
+    }
     .close{
       position: absolute;
       top: 1rem;
@@ -432,8 +436,11 @@ header{
   }
 }
 
-#formRegister{
-  background-color: #fff;
+.login-box{
+  @media(max-width: 480px)
+  {
+    margin-top: 100px;
+  }
 }
 
 .title{
@@ -530,6 +537,9 @@ header{
   @media(max-width: 767px){
     margin: 0 15px;
   }
+  @media(max-width: 480px){
+    margin-bottom: 100px;
+  }
   strong{
     a{
       &.back{
@@ -578,6 +588,7 @@ header{
     a{
       text-decoration: none;
       color: inherit;
+      font-weight: 700;
     }
     .mdl-card__supporting-text{
       ul{
@@ -855,12 +866,13 @@ header{
         loat: right;
         width: 60%;
         position: relative;
+        margin-bottom: 10px;
         @media(max-width: 600px){
           width: 100%;
         }
         .dot{
-          width: 15px;
-          height: 15px;
+          width: 10px;
+          height: 10px;
           background-color: $colorGray;
           border-radius: 50%;
           display: inline-block;
