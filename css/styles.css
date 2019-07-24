@@ -43,6 +43,11 @@ body {
   color: #fff;
   width: 60%;
 }
+@media (max-width: 480px) {
+  .intro-text {
+    width: 90%;
+  }
+}
 .intro-text .logo img {
   width: 15rem;
 }
@@ -395,6 +400,10 @@ header.header-session .access-header i.material-icons.menu-button {
 .button-add:hover {
   -webkit-transform: rotate(360deg);
   transform: rotate(360deg);
+}
+
+#formRegister {
+  background-color: #fff;
 }
 
 .title {

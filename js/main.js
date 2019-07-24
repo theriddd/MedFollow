@@ -27,7 +27,26 @@
 } ( jQuery ) );
 
 $(document).ready(function(){
-    $('select').select2();
+    function iformat(icon) {
+        var originalOption = icon.element;
+        // return $('<span><i class="material-icons">' + $(originalOption).data('icon') + '</i> ' + icon.text + '</span>');
+        if($(originalOption).data('icon') !== '')
+        {
+            return $('<span><img src="./img/icons/' + $(originalOption).data('icon') + '">' + icon.text + '</span>');
+        }
+        else
+        {
+            return $('<span>' + icon.text + '</span>');
+        }
+    }
+
+    $('select').select2({
+        width: "100%",
+        templateSelection: iformat,
+        templateResult: iformat,
+        allowHtml: true
+    });
+
     $('.loader').fadeOut(500, function(){
         $(this).remove();
         $('.content-loaded').removeClass('d-none');
@@ -41,6 +60,13 @@ $(document).ready(function(){
         nav: true,
         navText: ["<div class='prev'></div>", "<div class='next'></div>"]
     });
+
+    var file = window.location.pathname;
+    console.log(file);
+    if(file.indexOf("register"))
+    {
+        $('#formRegister').find('.select2-container--default').css('width', '300px');
+    }
 
     // $('.open-modal').click(function(){
     //     var t = $(this).data('title-modal'),

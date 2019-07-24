@@ -63,6 +63,9 @@ body {
 .intro-text {
   color: #fff;
   width: 60%;
+  @media(max-width: 480px){
+    width: 90%;
+  }
   .logo {
     img {
       width: 15rem;
@@ -429,6 +432,9 @@ header{
   }
 }
 
+#formRegister{
+  background-color: #fff;
+}
 
 .title{
   font-weight: bold;
