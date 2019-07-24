@@ -18,6 +18,12 @@ $borderColorInFields: #deefff;
 $backgroundColorInFields: #f5faff;
 $placeholderColor: #c3c3c3;
 
+textarea:focus,
+input:focus,
+select:focus{
+  outline: none;
+}
+
 .input-group-text {
   display: -ms-flexbox;
   display: flex;
