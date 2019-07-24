@@ -501,7 +501,6 @@ header.header-session .access-header i.material-icons.menu-button {
 .admin-content {
   background-color: #F9F9F9;
   position: relative;
-  height: 100%;
   color: #50555b;
 }
 @media (max-width: 767px) {

@@ -547,7 +547,7 @@ header{
 .admin-content{
   background-color: $colorBackgroundAdmin;
   position: relative;
-  height: 100%;
+  //height: 100%;
   color: $colorMediumGray;
   @media(max-width: 767px){
     margin: 0 15px;
