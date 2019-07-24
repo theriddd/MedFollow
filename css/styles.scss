@@ -9,6 +9,7 @@ $colorYellow: #FBAA21;
 $colorWhite: #FFFFFF;
 $colorTurquoise: #35DEF4;
 $colorLightBlue: #29B7E5;
+$colorHoverBlue: #1e85a7;
 $colorGreen: #66bb6a;
 
 // Margins
@@ -84,6 +85,15 @@ body {
     width: 100%;
     padding: 1rem;
     border-radius: 5px;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    &:hover{
+      background-color: $colorBlue;
+      color: $colorWhite;
+    }
   }
 
   a.register {
@@ -505,8 +515,13 @@ header{
     padding: 1rem;
     border-radius: 5px;
     border: 0;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
     &:hover{
-
+      background-color: $colorHoverBlue;
     }
   }
   a{
@@ -757,6 +772,14 @@ header{
           position: absolute;
           bottom: 0;
           padding: .6rem 1rem;
+          -webkit-transition: all .3s;
+          -moz-transition: all .3s;
+          -ms-transition: all .3s;
+          -o-transition: all .3s;
+          transition: all .3s;
+          &:hover{
+            background-color: $colorHoverBlue;
+          }
         }
       }
     }

@@ -62,6 +62,15 @@ body {
   width: 100%;
   padding: 1rem;
   border-radius: 5px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.intro-text a.login:hover {
+  background-color: #03B7E5;
+  color: #FFFFFF;
 }
 .intro-text a.register {
   color: #fff;
@@ -467,6 +476,14 @@ header.header-session .access-header i.material-icons.menu-button {
   padding: 1rem;
   border-radius: 5px;
   border: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.login-box button.enter:hover {
+  background-color: #1e85a7;
 }
 .login-box a.create-account, .login-box a.recovery-pass, .login-box a.goto-site {
   color: #fff;
@@ -693,6 +710,14 @@ header.header-session .access-header i.material-icons.menu-button {
   position: absolute;
   bottom: 0;
   padding: 0.6rem 1rem;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.admin-content form .form-group button.button-submit:hover {
+  background-color: #1e85a7;
 }
 .admin-content .owl-treatments .item .title {
   margin-bottom: 25px;
