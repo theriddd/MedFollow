@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/styles.css?v=1.0">
     <link rel="stylesheet" href="css/lib/owl/owl.carousel.css?v=1.0">
     <link rel="stylesheet" href="css/lib/select2/select2.min.css"/>
+    <link rel="stylesheet" href="css/lib/bootstrap-datepicker/bootstrap-datepicker.min.css"/>
     <link rel="stylesheet" href="css/helpers.css?v=1.0">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -287,22 +288,18 @@
                     <form>
                         <div class="form-row">
                             <div class="form-group col-md-4">
-                                <label for="inputEmail4">Cuando comienzas?</label>
-                                <select class="form-control">
-                                    <option value="" data-icon="" disabled selected>Ej: Lunes 10 de Abril</option>
-                                    <option value="Opcion1" data-icon="">Opcion1</option>
-                                    <option value="Opcion2" data-icon="">Opcion2</option>
-                                    <option value="Opcion3" data-icon="">Opcion3</option>
-                                </select>
+                                <label for="startDate">Cuando comienzas?</label>
+                                <input type="text"
+                                       class="form-control user-input noEmpty datepicker"
+                                       id="startDate"
+                                       placeholder="Ej: Lunes 10 de Abril">
                             </div>
                             <div class="form-group col-md-4">
-                                <label for="inputPassword4">Cuando comienzas?</label>
-                                <select class="form-control">
-                                    <option value="" data-icon="" disabled selected>Ej: Lunes 10 de Abril</option>
-                                    <option value="Opcion1" data-icon="">Opcion1</option>
-                                    <option value="Opcion2" data-icon="">Opcion2</option>
-                                    <option value="Opcion3" data-icon="">Opcion3</option>
-                                </select>
+                                <label for="endDate">Cuando terminas?</label>
+                                <input type="text"
+                                       class="form-control user-input noEmpty datepicker"
+                                       id="endDate"
+                                       placeholder="Ej: Lunes 10 de Diciembre">
                             </div>
                             <div class="form-group col-md-4">
                                 <label for="inputPassword4">Frecuencia</label>
@@ -365,6 +362,7 @@
 <script type="text/javascript" src="js/bootstrap.js"></script>
 <script type="text/javascript" src="js/lib/owl/owl.carousel.js"></script>
 <script type="text/javascript" src="js/lib/select2/select2.min.js"></script>
+<script type="text/javascript" src="js/lib/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

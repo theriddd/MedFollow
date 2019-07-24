@@ -158,6 +158,15 @@ $placeholderColor: #c3c3c3;
   }
 }
 
+/* Datepicker */
+.datepicker{
+  .datepicker-days{
+    .table-condensed{
+      font-size: 14px;
+    }
+  }
+}
+
 /* Others */
 a{
   color: $colorWhite;

@@ -68,6 +68,11 @@ $(document).ready(function(){
         $('#formRegister').find('.select2-container--default').css('width', '300px');
     }
 
+    $('.datepicker').datepicker({
+        format: "dd/mm/yyyy",
+        language: "es"
+    });
+
     // $('.open-modal').click(function(){
     //     var t = $(this).data('title-modal'),
     //         c = $(this).data('content-modal'),
