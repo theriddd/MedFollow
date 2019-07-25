@@ -62,10 +62,14 @@ $(document).ready(function(){
     });
 
     var file = window.location.pathname;
-    console.log(file);
     if(file.indexOf("register"))
     {
-        $('#formRegister').find('.select2-container--default').css('width', '300px');
+        $('#formRegister').find('.select2-container--default').css({
+            'position': 'relative',
+            'flex': '1 1 auto',
+            'width': '1%',
+            'padding-top': '5px'
+        });
     }
 
     $('.datepicker').datepicker({

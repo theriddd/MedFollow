@@ -19,9 +19,26 @@ $backgroundColorInFields: #f5faff;
 $placeholderColor: #c3c3c3;
 
 textarea:focus,
-input:focus,
-select:focus{
-  outline: none;
+textarea.form-control:focus,
+input.form-control:focus,
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus,
+input[type=number]:focus,
+[type=text].form-control:focus,
+[type=password].form-control:focus,
+[type=email].form-control:focus,
+[type=tel].form-control:focus,
+[contenteditable].form-control:focus,
+span.select2-selection:focus,
+span.select2-selection__rendered:focus{
+  box-shadow: inset 0 -1px 0 #ddd;
+}
+
+form{
+  .bottom-line{
+    border-bottom: 1px solid #efefef;
+  }
 }
 
 .input-group-text {
@@ -126,13 +143,17 @@ select:focus{
       background-color: #fff;
       border: unset;
       border-radius: 0;
-      height: 100%;
+      height: 60px;
       .select2-selection__rendered{
         color: #c3c3c3;
         line-height: 28px;
         text-align: left;
         padding-left: 15px;
+        padding-top: 15px;
         height: 100%;
+      }
+      .select2-selection__arrow{
+        top: 20px;
       }
     }
   }

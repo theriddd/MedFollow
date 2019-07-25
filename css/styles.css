@@ -458,7 +458,7 @@ header.header-session .access-header i.material-icons.menu-button {
   border-right: 5px solid #FF4355;
 }
 .login-box a.error {
-  color: #FF4355;
+  text-decoration-color: #FF4355;
 }
 .login-box select {
   font-size: 16px;
