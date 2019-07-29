@@ -100,7 +100,7 @@ $(document).ready(function(){
 
     $('.side-menu .header > .close').click(function(){
         $(".side-menu").animate({
-            "right":"-320px"
+            "right":"-360px"
         }, "slow");
         $('.transparency-layer').fadeOut('fast');
     });
@@ -113,8 +113,12 @@ $(document).ready(function(){
         console.log('delete notification');
     });
 
+    $('.admin-content').click(function(){
+        if($('.notifications-detail').css('display') === 'block')
+            $('.notifications-detail').fadeToggle();
+    });
+
     $('#check-data-doctor').click(function(){
-        // var atLeastOneIsChecked = $('input[name="selectDoctor"]').attr('checked');
         if($('#check-data-doctor').is(':checked'))
         {
             $('#selectDoctor').next('.select2-container--default').css('display', 'none');
@@ -124,6 +128,19 @@ $(document).ready(function(){
         {
             $('#selectDoctor').next('.select2-container--default').css('display', 'block');
             $('#selectDoctor_label').css('display', 'block');
+        }
+    });
+
+    $('#check-no-finish-date').click(function(){
+        if($('#check-no-finish-date').is(':checked'))
+        {
+            $('#endDate').css('display', 'none');
+            $('#endDate_label').text('Sin fecha de término');
+        }
+        else
+        {
+            $('#endDate').css('display', 'block');
+            $('#endDate_label').text('Cuando terminas?');
         }
     });
 

@@ -224,8 +224,11 @@ header{
     height: 85px;
     border-bottom: 1px solid #c3c3c3;
     overflow: hidden;
+    @media(max-width: 400px){
+      height: 100px;
+    }
     .description{
-      display: inline-block;
+      float: left;
       width: 80%;
       .mdl-card__supporting-text{
         ul{
@@ -254,9 +257,12 @@ header{
       }
     }
     .delete-icon{
-      display: inline-block;
+      float: left;
       width: max-content;
       padding-left: 20px;
+      @media(max-width: 360px){
+        padding-left: 0;
+      }
       i{
         &.material-icons{
           color: $colorRed;
@@ -264,7 +270,7 @@ header{
           font-size: 40px;
           vertical-align: middle;
           position: relative;
-          top: -18px;
+          top: 20px;
         }
       }
     }
@@ -290,7 +296,7 @@ header{
     box-shadow: 0 5px 10px 5px rgba(0,0,0,.21);
     right: 0;
     left: 0;
-    bottom: 16%;
+    bottom: 11%;
     margin: 60px auto 0 auto;
     width: 95vw;
   }
@@ -352,10 +358,14 @@ header{
   color: #fff;
   position: absolute;
   top: 0;
-  right: -320px;
+  right: -360px;
   height: 100%;
-  width: 320px;
+  width: 360px;
   z-index: 4;
+  @media(max-width: 320px){
+    right: -320px;
+    width: 320px;
+  }
   .header{
     margin: 3rem 3rem;
     height: 50px;
@@ -769,7 +779,7 @@ header{
         padding: 1rem;
         border-radius: 5px;
         &.button-submit{
-          position: absolute;
+          border: 0;
           bottom: 0;
           padding: .6rem 1rem;
           -webkit-transition: all .3s;
