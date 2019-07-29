@@ -113,6 +113,20 @@ $(document).ready(function(){
         console.log('delete notification');
     });
 
+    $('#check-data-doctor').click(function(){
+        // var atLeastOneIsChecked = $('input[name="selectDoctor"]').attr('checked');
+        if($('#check-data-doctor').is(':checked'))
+        {
+            $('#selectDoctor').next('.select2-container--default').css('display', 'none');
+            $('#selectDoctor_label').css('display', 'none');
+        }
+        else
+        {
+            $('#selectDoctor').next('.select2-container--default').css('display', 'block');
+            $('#selectDoctor_label').css('display', 'block');
+        }
+    });
+
     $('button.button-next').click(function(){
         var t = $(this).data('target');
         $('form').attr('action', t);
