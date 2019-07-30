@@ -144,6 +144,14 @@ $(document).ready(function(){
         }
     });
 
+    $('#selectFrequency').change(function(){
+        if($('#selectFrequency').val() === 'custom')
+        {
+            $('#selectFrequency').next('.select2-container--default').css('display', 'none');
+            $('#endFrequency').css('display', 'block');
+        }
+    });
+
     $('button.button-next').click(function(){
         var t = $(this).data('target');
         $('form').attr('action', t);

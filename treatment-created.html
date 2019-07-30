@@ -303,12 +303,18 @@
                             </div>
                             <div class="form-group col-md-4">
                                 <label for="inputPassword4">Frecuencia</label>
-                                <select class="form-control">
+                                <select class="form-control" id="selectFrequency">
                                     <option value="" data-icon="" disabled selected>Ej: Todos los días</option>
+                                    <option value="custom" data-icon="">Personalizar</option>
                                     <option value="Opcion1" data-icon="">Opcion1</option>
                                     <option value="Opcion2" data-icon="">Opcion2</option>
                                     <option value="Opcion3" data-icon="">Opcion3</option>
                                 </select>
+                                <input type="text"
+                                       class="form-control user-input noEmpty datepicker"
+                                       id="endFrequency"
+                                       style="display: none;"
+                                       placeholder="Seleccione una fecha">
                             </div>
                             <div class="form-group col-md-4">
                                 <label for="inputPassword4">Cuantas veces al día</label>
@@ -326,13 +332,11 @@
 
                             </div>
 
-                            <div class="form-group col-md-4">
+                            <div class="form-group col-md-8">
                                 <input class="form-check-input" type="checkbox" value="" id="check-no-finish-date">
                                 <label class="form-check-label" for="check-no-finish-date">
                                     Fecha de término indefinida
                                 </label>
-                            </div>
-                            <div class="form-group col-md-4">
                             </div>
                             <div class="form-group col-md-4">
                             </div>
