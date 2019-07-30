@@ -95,13 +95,26 @@ header.header-session {
   box-shadow: 0px 10px 10px 0px #cccccc;
   z-index: 3;
 }
-header.header-session .logo-header img {
+header.header-session .logo-header img.logo-desk {
+  display: block;
+  width: 10rem;
+  position: absolute;
+  left: 5rem;
+}
+@media (max-width: 600px) {
+  header.header-session .logo-header img.logo-desk {
+    display: none;
+  }
+}
+header.header-session .logo-header img.logo-mobile {
+  display: none;
   width: 2rem;
   position: absolute;
   left: 5rem;
 }
-@media (max-width: 480px) {
-  header.header-session .logo-header img {
+@media (max-width: 600px) {
+  header.header-session .logo-header img.logo-mobile {
+    display: block;
     left: 3rem;
   }
 }
