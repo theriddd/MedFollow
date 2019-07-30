@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed945189-8729-4d70-8641-59dc397b94ab" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/behavior.html" beforeDir="false" afterPath="$PROJECT_DIR$/behavior.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/companion.html" beforeDir="false" afterPath="$PROJECT_DIR$/companion.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doctor.html" beforeDir="false" afterPath="$PROJECT_DIR$/doctor.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/link-patient.html" beforeDir="false" afterPath="$PROJECT_DIR$/link-patient.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medicine.html" beforeDir="false" afterPath="$PROJECT_DIR$/medicine.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-treatments.html" beforeDir="false" afterPath="$PROJECT_DIR$/my-treatments.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resume.html" beforeDir="false" afterPath="$PROJECT_DIR$/resume.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/treatment-created.html" beforeDir="false" afterPath="$PROJECT_DIR$/treatment-created.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/treatment.html" beforeDir="false" afterPath="$PROJECT_DIR$/treatment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,6 +23,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/styles.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="415">
+              <caret line="570" column="2" lean-forward="true" selection-start-line="570" selection-start-column="2" selection-end-line="570" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/register.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -58,10 +59,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/treatment-created.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
+            <state relative-caret-position="26">
               <caret line="36" column="77" selection-start-line="36" selection-start-column="77" selection-end-line="36" selection-end-column="77" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -127,15 +128,6 @@
                 <element signature="n#style#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#a#0;n#body#0;n#html#0;n#!!top" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1077">
-              <caret line="53" column="59" selection-start-line="53" selection-start-column="59" selection-end-line="53" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -208,7 +200,6 @@
         <option value="$PROJECT_DIR$/login.html" />
         <option value="$PROJECT_DIR$/css/helpers.scss" />
         <option value="$PROJECT_DIR$/js/main.js" />
-        <option value="$PROJECT_DIR$/css/styles.scss" />
         <option value="$PROJECT_DIR$/home.html" />
         <option value="$PROJECT_DIR$/behavior.html" />
         <option value="$PROJECT_DIR$/companion.html" />
@@ -219,6 +210,7 @@
         <option value="$PROJECT_DIR$/resume.html" />
         <option value="$PROJECT_DIR$/treatment.html" />
         <option value="$PROJECT_DIR$/treatment-created.html" />
+        <option value="$PROJECT_DIR$/css/styles.scss" />
       </list>
     </option>
   </component>
@@ -240,6 +232,11 @@
             <path>
               <item name="MedFollow" type="b2602c69:ProjectViewProjectNode" />
               <item name="MedFollow" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MedFollow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MedFollow" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -296,7 +293,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68315000" />
+    <option name="totallyTimeSpent" value="68480000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -402,13 +399,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3171">
           <caret line="151" column="9" selection-start-line="151" selection-start-column="9" selection-end-line="151" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/styles.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="127" column="19" selection-start-line="127" selection-start-column="19" selection-end-line="127" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -552,7 +542,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/treatment-created.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
+        <state relative-caret-position="26">
           <caret line="36" column="77" selection-start-line="36" selection-start-column="77" selection-end-line="36" selection-end-column="77" />
           <folding>
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -567,6 +557,13 @@
             <element signature="n#a#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#input#0;n#div#2;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/styles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="570" column="2" lean-forward="true" selection-start-line="570" selection-start-column="2" selection-end-line="570" selection-end-column="2" />
         </state>
       </provider>
     </entry>
