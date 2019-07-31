@@ -782,6 +782,55 @@ header{
           margin-left: 1.25rem;
         }
       }
+      .hourSelectedFrequency{
+        position: relative;
+        color: #fff;
+        display: inline-block;
+        width: 110px;
+        height: 38px;
+        padding-top: 6px;
+        margin-right: 10px;
+        text-align: center;
+        .leftBorder{
+          position: absolute;
+          border-top-left-radius: 50%;
+          border-bottom-left-radius: 50%;
+          left: 0;
+          top: 0;
+          height: 100%;
+          background-color: #66BA6A;
+          width: 20px;
+        }
+        .content{
+          position: absolute;
+          left: 10px;
+          top: 0;
+          text-align: center;
+          padding-top: 5px;
+          height: 100%;
+          background-color: #66BA6A;
+          display: inline-block;
+          width: 90px;
+          input{
+            width: 90px;
+            border: 0;
+            background-color: #66BA6A;
+            text-align: center;
+            color: #fff;
+          }
+        }
+        .rigthBorder{
+          position: absolute;
+          border-top-right-radius: 50%;
+          border-bottom-right-radius: 50%;
+          right: 0;
+          top: 0;
+          height: 100%;
+          background-color: #66BA6A;
+          display: inline-block;
+          width: 20px;
+        }
+      }
       button{
         color: #fff;
         background-color: #29B7E5;

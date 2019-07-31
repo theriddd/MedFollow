@@ -40,6 +40,28 @@ $(document).ready(function(){
         }
     }
 
+    function capsuleTemplate(arrHours, containerClass){
+        console.log(arrHours.length);
+        var insertHtml = "", i;
+        for (i = 0; i < arrHours.length; i++)
+        {
+            console.log('vu');
+            insertHtml += '<div class="hourSelectedFrequency">\n' +
+                '       <div class="leftBorder"></div>\n' +
+                '       <div class="content"><input type="text" value="' + arrHours[i] + '" class="datepicker"></div>\n' +
+                '       <div class="rigthBorder"></div>\n' +
+                '   </div>';
+        }
+        console.log(insertHtml);
+        $('.' + containerClass).empty();
+        $('.' + containerClass).append(insertHtml);
+
+        /*$('.datepicker').datepicker({
+            format: "dd/mm/yyyy",
+            language: "es"
+        });*/
+    }
+
     $('select').select2({
         width: "100%",
         templateSelection: iformat,
@@ -150,6 +172,24 @@ $(document).ready(function(){
             $('#selectFrequency').next('.select2-container--default').css('display', 'none');
             $('#endFrequency').css('display', 'block');
         }
+    });
+
+    $('#selectFrequencyDay').change(function(){
+        var arrHours;
+        if($(this).val() === "Opcion1")
+        {
+            arrHours = ["08:00hr", "20:00hr"];
+        }
+        if($(this).val() === "Opcion2")
+        {
+            arrHours = ["08:00hr", "16:00hr", "00:00hr"];
+        }
+        if($(this).val() === "Opcion3")
+        {
+            arrHours = ["06:00hr", "12:00hr", "18:00hr", "00:00hr"];
+        }
+
+        capsuleTemplate(arrHours, "capsulesHours");
     });
 
     $('button.button-next').click(function(){
